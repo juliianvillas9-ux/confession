@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Something I Wanted to Tell You</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #ff758c, #ff7eb3);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: #fff;
+      width: 100%;
+      max-width: 430px;
+      border-radius: 20px;
+      padding: 26px 22px 30px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      animation: slideUp 0.8s ease;
+    }
+
+    .heart {
+      text-align: center;
+      font-size: 40px;
+      animation: pulse 1.4s infinite;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4d6d;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 16.5px;
+      line-height: 1.65;
+      color: #333;
+      margin: 14px 0;
+    }
+
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    button {
+      font-size: 17px;
+      padding: 14px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .yes {
+      background: #ff4d6d;
+      color: white;
+    }
+
+    .talk {
+      background: #ffe0e6;
+      color: #ff4d6d;
+    }
+
+    #response {
+      margin-top: 22px;
+      font-size: 17px;
+      color: #ff4d6d;
+      display: none;
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>iro,uhmm basta kani.</h1>
+
+    <p>
+      I wanted to be honest with you na. I like youu and I thought you should know.
+      I know it might be hard to believe pero mao nani sya.
+      Ik this is kinda bit awkward but I wanna try yk?
+      pakshitt HAHAHAHA.
+    </p>
+
+    <p>
+      Since grade 11 pa nako gina tago, and I stopped my feelings for you for a while
+      because of some reasons — you havee ka fling, nakay crush,
+      tas medj wala pako ka move on kay eira.
+    </p>
+
+    <p>
+      Soo after I decided to tryy again kazii why not,
+      gi keep nako nga way maka balo even ikaw.
+      Gusto nako i lowkey rasaa kay diko gusto maging awkward ta 😫
+    </p>
+
+    <p>
+      For now, I just want to express my feelings for you lang
+      and you don't need to reciprocate it kasi it's a confession lang man.
+      Owkeii raman sab if you don't feel the same way.
+      I just want you to be aware of how I feel about you.
+    </p>
+
+    <p>
+      ayggg isaba sa ubannn pleaseeee  
+      mag patyanay jud taaa 😔
+    </p>
+
+    <div class="buttons">
+      <button class="yes" onclick="replyYes()">Niggerr</button>
+      <button class="talk" onclick="replyTalk()">Niggerr</button>
+    </div>
+
+    <div id="response"></div>
+  </div>
+
+  <script>
+    function replyYes() {
+      const r = document.getElementById("response");
+      r.style.display = "block";
+      r.textContent = "Hehe sarriii";
+    }
+
+    function replyTalk() {
+      const r = document.getElementById("response");
+      r.style.display = "block";
+      r.textContent = "GG's 💕";
+    }
+  </script>
+</body>
+</html>
